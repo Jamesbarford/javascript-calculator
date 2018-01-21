@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+
+<head>
+  <title>JavaScript Calculator</title>
+<script src="jquery.js"></script>
+
+<style>
+
+html {
+  height: 100%;
+  background: #000;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+button {
+  font-size: 200%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  border: 2px solid #333;
+  border-radius: 20%;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: orange;
+  transition: 0.3s;
+}
+
+button:active {
+  background: #000;
+  transition: 0.2s;
+}
+
+input {
+font-size: 14px;
+height: 40px;
+text-align: right;
+color: #333;
+}
+
+</style>
+</head>
+
+<body>
+<table>
+<tr>
+  <td colspan="4"><input id="display" name="display" value='' disabled></input></td>
+</tr>
+
+<tr>
+  <td><button id="button1" value="1">1</button></td>
+  <td><button id="button2" value="2">2</button></td>
+  <td><button id="button3" value="3">3</button></td>
+  <td><button id="addButton" class="opperator" value="+">+</button></td>
+</tr>
+<tr>
+  <td><button id="button4" value="4">4</button></td>
+  <td><button id="button5" value="5">5</button></td>
+  <td><button id="button6" value="6">6</button></td>
+  <td><button id="subtractButton" class="opperator" value="-">-</button></td>
+</tr>
+<tr>
+  <td><button id="button7" value="7">7</button></td>
+  <td><button id="button8" value="8">8</button></td>
+  <td><button id="button9" value="9">9</button></td>
+  <td><button id="multiplyButton" class="opperator" value="*">*</button></td>
+</tr>
+<tr>
+  <td><button id="clearButton" value="reset">C</button></td>
+  <td><button id="button0" value="0">0</button></td>
+  <td><button id="equalsButton">=</button></td>
+  <td><button id="divideButton" class="opperator" value="/">&#247;</button></td>
+</tr>
+</table>
+<script src="calc.js"></script>
+
+
+</body>
+
+
+
+</html>
